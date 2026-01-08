@@ -1,0 +1,23 @@
+{
+    "name": "EasyToolKit.TileWorldPro.Editor",
+    "rootNamespace": "",
+    "references": [
+        "EasyToolKit.Core.Runtime",
+        "EasyToolKit.Core.Editor",
+        "EasyToolKit.Inspector.Runtime",
+        "EasyToolKit.Inspector.Editor",
+        "EasyToolKit.TileWorldPro.Runtime",
+        "EasyToolKit.OdinSerializer.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
