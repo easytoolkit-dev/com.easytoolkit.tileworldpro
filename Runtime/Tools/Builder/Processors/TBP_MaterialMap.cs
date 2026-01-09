@@ -2,7 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using EasyToolKit.Core;
-using EasyToolKit.Inspector;
+using EasyToolKit.Core.Mathematics;
+using EasyToolKit.Inspector.Attributes;
 using EasyToolKit.TileWorldPro;
 using UnityEngine;
 
@@ -239,7 +240,7 @@ namespace EasyToolKit.TileWorldPro
             if (EnableRandomFlip)
             {
                 var key = new Vector3Int(tileCoordinate.X / size, tileCoordinate.Y, tileCoordinate.Z / size).ToString();
-                var doFlip = PseudoRandom.Range(key, 0, 100) < (int)(Probability * 100);
+                var doFlip = RandomUtility.PseudoRange(key, 0, 100) < (int)(Probability * 100);
                 if (doFlip)
                 {
                     materialMatrix = GetFlippedMatrix(key, out var isHorizontal);
@@ -273,7 +274,7 @@ namespace EasyToolKit.TileWorldPro
                     isHorizontal = false;
                     return _flippedMaterialMatrices[1];
                 case FlipModes.HorizontalOrVertical:
-                    isHorizontal = PseudoRandom.Range(key, 0, 100, seed: 1) < (int)(HorizontalOrVerticalBias * 100);
+                    isHorizontal = RandomUtility.PseudoRange(key, 0, 100, seed: 1) < (int)(HorizontalOrVerticalBias * 100);
                     return _flippedMaterialMatrices[isHorizontal ? 0 : 1];
                 default:
                     throw new ArgumentOutOfRangeException(nameof(FlipMode), FlipMode, null);

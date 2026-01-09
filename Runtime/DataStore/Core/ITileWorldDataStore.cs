@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using EasyToolKit.Inspector;
+using EasyToolKit.Inspector.Attributes;
 
 namespace EasyToolKit.TileWorldPro
 {

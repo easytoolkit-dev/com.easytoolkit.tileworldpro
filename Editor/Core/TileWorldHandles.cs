@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using EasyToolKit.Core;
 using EasyToolKit.Core.Editor;
+using EasyToolKit.Core.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;

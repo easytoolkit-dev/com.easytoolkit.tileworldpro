@@ -1,8 +1,7 @@
 using System;
-using EasyToolKit.Core;
-using EasyToolKit.Inspector;
+using EasyToolKit.Core.Unity;
+using EasyToolKit.Inspector.Attributes;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace EasyToolKit.TileWorldPro
 {

@@ -1,5 +1,5 @@
-using EasyToolKit.Inspector;
-using EasyToolKit.Inspector.Editor;
+using EasyToolKit.Inspector.Attributes;
+using EasyToolKit.Inspector.Attributes.Editor;
 using EasyToolKit.TileWorldPro;
 using UnityEditor;
 

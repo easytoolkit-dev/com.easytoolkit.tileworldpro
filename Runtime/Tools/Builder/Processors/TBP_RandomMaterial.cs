@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using EasyToolKit.Core;
-using EasyToolKit.Inspector;
+using EasyToolKit.Core.Mathematics;
+using EasyToolKit.Inspector.Attributes;
 using EasyToolKit.TileWorldPro;
 using UnityEngine;
 
@@ -54,7 +55,7 @@ namespace EasyToolKit.TileWorldPro
 
             var tileCoordinate = e.TileInfo.ChunkTileCoordinate.ToTileCoordinate(e.ChunkTerrainObject.ChunkObject.Area);
             var key = tileCoordinate.ToString();
-            var number = PseudoRandom.Range(key, 0, (int)(totalWeight * 100)) / 100f;
+            var number = RandomUtility.PseudoRange(key, 0, (int)(totalWeight * 100)) / 100f;
             for (int i = 0; i < MaterialItems.Count; i++)
             {
                 if (number < cumulativeWidgets[i])

@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using EasyToolKit.Inspector;
+using EasyToolKit.Inspector.Attributes;
 using EasyToolKit.TileWorldPro;
 
 [assembly: RegisterTileBuildProcessor(typeof(TBP_RotationAdjust), "旋转调整")]

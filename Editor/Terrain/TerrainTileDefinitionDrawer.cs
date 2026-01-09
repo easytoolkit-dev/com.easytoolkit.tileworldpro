@@ -1,6 +1,7 @@
 using EasyToolKit.Core;
 using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Editor;
+using EasyToolKit.Core.Mathematics;
+using EasyToolKit.Inspector.Attributes.Editor;
 using EasyToolKit.TileWorldPro.Editor.Internal;
 using UnityEditor;
 using UnityEngine;
