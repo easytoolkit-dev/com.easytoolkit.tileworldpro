@@ -1,4 +1,4 @@
-using EasyToolKit.Inspector;
+using EasyToolKit.Inspector.Attributes;
 using JetBrains.Annotations;
 using System;
 using UnityEngine;

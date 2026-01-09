@@ -1,5 +1,5 @@
 using System;
-using EasyToolKit.Inspector;
+using EasyToolKit.Inspector.Attributes;
 using UnityEngine;
 
 namespace EasyToolKit.TileWorldPro

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Inspector;
+using EasyToolKit.Inspector.Attributes;
 using EasyToolKit.OdinSerializer;
 using UnityEngine;
 

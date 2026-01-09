@@ -1,4 +1,4 @@
-using EasyToolKit.Inspector;
+using EasyToolKit.Inspector.Attributes;
 using EasyToolKit.OdinSerializer;
 using System;
 using UnityEngine;
