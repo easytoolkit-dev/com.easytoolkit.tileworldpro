@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace EasyToolKit.TileWorldPro.Editor
 {
-    public class BrushTool : DraggableDrawingTool, IEasyEventTrigger
+    public class BrushTool : DraggableDrawingTool
     {
         private static readonly float Epsilon = 0.0001f;
 
@@ -89,7 +89,8 @@ namespace EasyToolKit.TileWorldPro.Editor
         protected override void DoTiles(DrawingToolContext context, IReadOnlyList<TileCoordinate> tileCoordinates)
         {
             context.Designer.TileWorldAsset.SetTilesAt(tileCoordinates, context.TerrainDefinition.Guid);
-            this.TriggerEvent(new SetTilesEvent(context.TerrainDefinition.Guid, tileCoordinates.ToArray()));
+            EventManager.Instance.Dispatch(new SetTilesEvent(context.TerrainDefinition.Guid,
+                tileCoordinates.ToArray()));
         }
 
         protected override Color GetHitColor(DrawingToolContext context)

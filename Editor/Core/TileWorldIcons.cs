@@ -1,7 +1,8 @@
 using EasyToolKit.Core;
 using EasyToolKit.Core.Editor.Internal;
 using System;
-using EasyToolKit.Core.Lifecycle;
+using EasyToolKit.Core.Editor;
+using EasyToolKit.Core.Patterns;
 using EasyToolKit.Core.Unity;
 using UnityEditor;
 using UnityEngine;
@@ -32,9 +33,7 @@ namespace EasyToolKit.TileWorldPro.Editor
             {
                 if (_terrainTypeIconsAtlas == null)
                 {
-                    var directory = EditorAssetPaths.GetModuleEditorDirectory("TileWorldPro");
-                    _terrainTypeIconsAtlas =
-                        AssetDatabase.LoadAssetAtPath<Texture2D>(directory + "/TerrainTypeIconAtlas.png");
+                    _terrainTypeIconsAtlas = EditorResourcesUtility.Load<Texture2D>("tileworldpro", "TerrainTypeIconAtlas.png");
                 }
 
                 if (_terrainTypeIcons == null || _terrainTypeIcons.Length == 0 || _terrainTypeIcons[0, 0] == null)
@@ -52,8 +51,7 @@ namespace EasyToolKit.TileWorldPro.Editor
             {
                 if (_drawIconAtlas == null)
                 {
-                    var directory = EditorAssetPaths.GetModuleEditorDirectory("TileWorldPro");
-                    _drawIconAtlas = AssetDatabase.LoadAssetAtPath<Texture2D>(directory + "/DrawIconAtlas.png");
+                    _drawIconAtlas = EditorResourcesUtility.Load<Texture2D>("tileworldpro", "DrawIconAtlas.png");
                 }
 
                 if (_drawIcons == null || _drawIcons.Length == 0 || _drawIcons[0, 0] == null)
@@ -71,8 +69,7 @@ namespace EasyToolKit.TileWorldPro.Editor
             {
                 if (_miscIconAtlas == null)
                 {
-                    var directory = EditorAssetPaths.GetModuleEditorDirectory("TileWorldPro");
-                    _miscIconAtlas = AssetDatabase.LoadAssetAtPath<Texture2D>(directory + "/MiscIconAtlas.png");
+                    _miscIconAtlas = EditorResourcesUtility.Load<Texture2D>("tileworldpro", "MiscIconAtlas.png");
                 }
 
                 if (_miscIcons == null || _miscIcons.Length == 0 || _miscIcons[0, 0] == null)
@@ -90,8 +87,7 @@ namespace EasyToolKit.TileWorldPro.Editor
             {
                 if (_terrainIconAtlas == null)
                 {
-                    var directory = EditorAssetPaths.GetModuleEditorDirectory("TileWorldPro");
-                    _terrainIconAtlas = AssetDatabase.LoadAssetAtPath<Texture2D>(directory + "/TerrainIconAtlas.png");
+                    _terrainIconAtlas = EditorResourcesUtility.Load<Texture2D>("tileworldpro", "TerrainIconAtlas.png");
                 }
 
                 if (_terrainIcons == null || _terrainIcons.Length == 0 || _terrainIcons[0, 0] == null)

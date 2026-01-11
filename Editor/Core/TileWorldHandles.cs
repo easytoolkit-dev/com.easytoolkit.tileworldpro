@@ -122,7 +122,7 @@ namespace EasyToolKit.TileWorldPro.Editor
 
             if (fillCube)
             {
-                DrawFillCube(blockPosition, tileSize, hitColor.MulA(0.7f));
+                DrawFillCube(blockPosition, tileSize, hitColor.WithAMultiplied(0.7f));
             }
 
             if (surroundingColor != null)
@@ -132,10 +132,10 @@ namespace EasyToolKit.TileWorldPro.Editor
                 DrawSquare(blockPosition + Vector3.left, tileSize, surroundingColor.Value);
                 DrawSquare(blockPosition + Vector3.right, tileSize, surroundingColor.Value);
 
-                DrawSquare(blockPosition + Vector3.forward + Vector3.left, tileSize, surroundingColor.Value.MulA(0.5f));
-                DrawSquare(blockPosition + Vector3.forward + Vector3.right, tileSize, surroundingColor.Value.MulA(0.5f));
-                DrawSquare(blockPosition + Vector3.back + Vector3.left, tileSize, surroundingColor.Value.MulA(0.5f));
-                DrawSquare(blockPosition + Vector3.back + Vector3.right, tileSize, surroundingColor.Value.MulA(0.5f));
+                DrawSquare(blockPosition + Vector3.forward + Vector3.left, tileSize, surroundingColor.Value.WithAMultiplied(0.5f));
+                DrawSquare(blockPosition + Vector3.forward + Vector3.right, tileSize, surroundingColor.Value.WithAMultiplied(0.5f));
+                DrawSquare(blockPosition + Vector3.back + Vector3.left, tileSize, surroundingColor.Value.WithAMultiplied(0.5f));
+                DrawSquare(blockPosition + Vector3.back + Vector3.right, tileSize, surroundingColor.Value.WithAMultiplied(0.5f));
             }
         }
 

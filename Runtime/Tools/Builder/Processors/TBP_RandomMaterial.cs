@@ -55,7 +55,7 @@ namespace EasyToolKit.TileWorldPro
 
             var tileCoordinate = e.TileInfo.ChunkTileCoordinate.ToTileCoordinate(e.ChunkTerrainObject.ChunkObject.Area);
             var key = tileCoordinate.ToString();
-            var number = RandomUtility.PseudoRange(key, 0, (int)(totalWeight * 100)) / 100f;
+            var number = RandomUtility.DeterministicRange(key, 0, (int)(totalWeight * 100)) / 100f;
             for (int i = 0; i < MaterialItems.Count; i++)
             {
                 if (number < cumulativeWidgets[i])

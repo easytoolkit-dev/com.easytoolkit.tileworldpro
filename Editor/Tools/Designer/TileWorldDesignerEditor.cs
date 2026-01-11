@@ -193,7 +193,7 @@ namespace EasyToolKit.TileWorldPro.Editor
                     hitPoint = ray.GetPoint(enter);
                     if (hitPoint.y < 0)
                     {
-                        hitPoint = hitPoint.SetY(0);
+                        hitPoint = hitPoint.WithY(0);
                     }
 
                     TileWorldHandles.DrawDebugBlockGUI(

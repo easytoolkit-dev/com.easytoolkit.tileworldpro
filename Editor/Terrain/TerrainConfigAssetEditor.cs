@@ -175,7 +175,7 @@ namespace EasyToolKit.TileWorldPro.Editor
 
                     if (Event.current.type == EventType.Repaint)
                     {
-                        GUI.DrawTexture(buttonRect.AlignCenter(16, 16), icon);
+                        GUI.DrawTexture(buttonRect.WithCenterAligned(16, 16), icon);
                     }
                 }
                 EditorGUILayout.EndHorizontal();

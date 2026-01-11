@@ -107,7 +107,7 @@ namespace EasyToolKit.TileWorldPro.Editor
         protected virtual void DrawCursorCube(DrawingToolContext context, TileCoordinate tileCoordinate, Color hitColor)
         {
             var tileSize = context.Designer.TileWorldAsset.TileSize;
-            var surroundingColor = Color.white.SetA(0.2f);
+            var surroundingColor = Color.white.WithA(0.2f);
             TileWorldHandles.DrawHitCube(
                 tileCoordinate,
                 tileSize,
@@ -124,7 +124,7 @@ namespace EasyToolKit.TileWorldPro.Editor
                 dragWorldPosition,
                 tileSize,
                 context.Designer.Settings.FillCursorDebugCube,
-                hitColor.MulA(0.7f));
+                hitColor.WithAMultiplied(0.7f));
         }
 
         protected virtual Vector3 AdjustTilePosition(

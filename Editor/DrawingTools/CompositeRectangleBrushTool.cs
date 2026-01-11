@@ -18,7 +18,7 @@ namespace EasyToolKit.TileWorldPro.Editor
 
             var startTilePosition = dragTileCoordinatePath.First();
             var startTileWorldPosition = context.Designer.StartPoint.TileCoordinateToPosition(startTilePosition, context.Designer.TileWorldAsset.TileSize);
-            return newTileWorldPosition.SetY(startTileWorldPosition.y);
+            return newTileWorldPosition.WithY(startTileWorldPosition.y);
         }
 
         protected override IReadOnlyList<TileCoordinate> GetDrawingTileCoordinates(

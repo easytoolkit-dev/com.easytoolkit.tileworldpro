@@ -1,19 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Common;
+using EasyToolKit.Core.Collections;
 using EasyToolKit.Core.Diagnostics;
 using EasyToolKit.Core.Events;
 using EasyToolKit.Inspector.Attributes;
 using EasyToolKit.OdinSerializer;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace EasyToolKit.TileWorldPro
 {
     [ExecuteAlways]
-    public class TileWorldBuilder : SerializedMonoBehaviour, IEasyEventListener<SetTilesEvent>, IEasyEventListener<RemoveTilesEvent>
+    public class TileWorldBuilder : SerializedMonoBehaviour, IEventHandler<SetTilesEvent>, IEventHandler<RemoveTilesEvent>
     {
         [Required]
         [LabelText("起始点")]
@@ -376,17 +374,13 @@ namespace EasyToolKit.TileWorldPro
 
         private void OnEnable()
         {
-            this.RegisterListener<SetTilesEvent>();
-            this.RegisterListener<RemoveTilesEvent>();
+            this.RegisterEventHandler<SetTilesEvent>()
+                .UnregisterWhenGameObjectDisable(gameObject);
+            this.RegisterEventHandler<RemoveTilesEvent>()
+                .UnregisterWhenGameObjectDisable(gameObject);
         }
 
-        private void OnDisable()
-        {
-            this.UnregisterListener<SetTilesEvent>();
-            this.UnregisterListener<RemoveTilesEvent>();
-        }
-
-        void IEasyEventListener<SetTilesEvent>.OnEvent(object sender, SetTilesEvent eventArg)
+        void IEventHandler<SetTilesEvent>.OnEvent(SetTilesEvent eventArg)
         {
             if (Settings.RealTimeIncrementalBuild)
             {
@@ -400,7 +394,7 @@ namespace EasyToolKit.TileWorldPro
             }
         }
 
-        void IEasyEventListener<RemoveTilesEvent>.OnEvent(object sender, RemoveTilesEvent eventArg)
+        void IEventHandler<RemoveTilesEvent>.OnEvent(RemoveTilesEvent eventArg)
         {
             if (Settings.RealTimeIncrementalBuild)
             {

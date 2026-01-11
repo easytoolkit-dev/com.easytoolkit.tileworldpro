@@ -1,20 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
 using EasyToolKit.Core.Events;
-using UnityEditor;
 using UnityEngine;
 
 namespace EasyToolKit.TileWorldPro.Editor
 {
-    public class EraseTool : DraggableDrawingTool, IEasyEventTrigger
+    public class EraseTool : DraggableDrawingTool
     {
         protected override void DoTiles(DrawingToolContext context, IReadOnlyList<TileCoordinate> tileCoordinates)
         {
             context.Designer.TileWorldAsset.RemoveTilesAt(tileCoordinates, context.TerrainDefinition.Guid);
-            this.TriggerEvent(new RemoveTilesEvent(context.TerrainDefinition.Guid, tileCoordinates.ToArray()));
+            EventManager.Instance.Dispatch(new RemoveTilesEvent(context.TerrainDefinition.Guid, tileCoordinates.ToArray()));
         }
 
         protected override Color GetHitColor(DrawingToolContext context)
