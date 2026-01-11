@@ -1,13 +1,11 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Internal;
-using EasyToolKit.Core.Lifecycle;
+using EasyToolKit.Core.Patterns;
 using EasyToolKit.Inspector.Attributes;
 using UnityEngine;
 
 namespace EasyToolKit.TileWorldPro
 {
     [EasyInspector]
-    [ModuleConfigsPath("TileWorldPro")]
+    [ScriptableObjectSingletonConfiguration(null, ScriptableObjectLoadMode.Asset)]
     public class TileWorldConfigAsset : ScriptableObjectSingleton<TileWorldConfigAsset>
     {
         [LabelText("世界高度限制")]

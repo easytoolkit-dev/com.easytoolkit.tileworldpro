@@ -11,9 +11,9 @@ namespace EasyToolKit.TileWorldPro
         public TileCoordinate PositionToTileCoordinate(Vector3 position, float tileSize)
         {
             var local = position - transform.position;
-            int coordX = (local.x / tileSize).SafeFloorToInt(Epsilon);
-            int coordY = (local.y / tileSize).SafeFloorToInt(Epsilon);
-            int coordZ = (local.z / tileSize).SafeFloorToInt(Epsilon);
+            int coordX = (local.x / tileSize).FloorToIntApproximately(Epsilon);
+            int coordY = (local.y / tileSize).FloorToIntApproximately(Epsilon);
+            int coordZ = (local.z / tileSize).FloorToIntApproximately(Epsilon);
 
             return new TileCoordinate(coordX, coordY, coordZ);
         }

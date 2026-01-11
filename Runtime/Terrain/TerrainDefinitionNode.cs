@@ -48,7 +48,7 @@ namespace EasyToolKit.TileWorldPro
 
 #if UNITY_EDITOR
         public Color Color => _color;
-        public Color SideLineColor => _color.SetA(1f);
+        public Color SideLineColor => _color.WithA(1f);
         public string Tooltip => Guid.ToString("D");
 
         private static Func<TerrainDefinitionNodeType, Texture2D> s_iconGetter;

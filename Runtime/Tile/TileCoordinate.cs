@@ -64,8 +64,8 @@ namespace EasyToolKit.TileWorldPro
 
         public ChunkCoordinate ToChunkCoordinate(Vector2Int chunkSize)
         {
-            var chunkX = ((float)_coordinate.x / chunkSize.x).SafeFloorToInt();
-            var chunkY = ((float)_coordinate.z / chunkSize.y).SafeFloorToInt();
+            var chunkX = ((float)_coordinate.x / chunkSize.x).FloorToIntApproximately();
+            var chunkY = ((float)_coordinate.z / chunkSize.y).FloorToIntApproximately();
             return new ChunkCoordinate((ushort)chunkX, (ushort)chunkY);
         }
 

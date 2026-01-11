@@ -66,7 +66,7 @@ namespace EasyToolKit.TileWorldPro.Editor
             if (Event.current.type == EventType.Repaint)
             {
                 var icon = TileWorldIcons.Instance.GetDrawModeIcon(drawMode);
-                GUI.DrawTexture(btnRect.AlignCenter(25, 25), icon);
+                GUI.DrawTexture(btnRect.WithCenterAligned(25, 25), icon);
             }
 
             if (clicked)

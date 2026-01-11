@@ -31,7 +31,7 @@ namespace EasyToolKit.TileWorldPro.Editor
             EasyEditorGUI.DrawSolidRect(totalRect, BackgroundColor);
 
             var iconRect = GUILayoutUtility.GetRect(64, 64, GUILayout.ExpandWidth(false), GUILayout.ExpandHeight(false));
-            iconRect = iconRect.AlignCenter(32, 32);
+            iconRect = iconRect.WithCenterAligned(32, 32);
             iconRect.xMin += EasyGUIHelper.CurrentIndentAmount;
             iconRect.xMax += EasyGUIHelper.CurrentIndentAmount;
 
