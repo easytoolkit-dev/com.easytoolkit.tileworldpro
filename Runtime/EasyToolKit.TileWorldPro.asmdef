@@ -1,9 +1,9 @@
 {
-    "name": "EasyToolKit.TileWorldPro.Runtime",
+    "name": "EasyToolKit.TileWorldPro",
     "references": [
-        "EasyToolKit.Core.Runtime",
-        "EasyToolKit.Inspector.Runtime",
-        "EasyToolKit.OdinSerializer.Runtime"
+        "EasyToolKit.Core",
+        "EasyToolKit.Inspector",
+        "EasyToolKit.OdinSerializer"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
