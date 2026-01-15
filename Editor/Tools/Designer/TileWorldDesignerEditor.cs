@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using EasyToolKit.Core;
 using EasyToolKit.Core.Mathematics;
-using EasyToolKit.Inspector.Attributes.Editor;
+using EasyToolKit.Inspector.Editor;
 using UnityEditor;
 using UnityEngine;
 

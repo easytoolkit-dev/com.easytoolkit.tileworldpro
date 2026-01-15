@@ -1,5 +1,5 @@
 using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Attributes.Editor;
+using EasyToolKit.Inspector.Editor;
 using UnityEditor;
 using UnityEngine;
 

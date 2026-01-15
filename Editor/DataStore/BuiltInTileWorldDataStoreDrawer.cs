@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Attributes.Editor;
+using EasyToolKit.Inspector.Editor;
 using EasyToolKit.TileWorldPro;
 using UnityEditor;
 using UnityEngine;

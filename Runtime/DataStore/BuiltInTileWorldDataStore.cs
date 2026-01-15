@@ -4,7 +4,7 @@ using System.Linq;
 using EasyToolKit.Core;
 using EasyToolKit.Core.Collections;
 using EasyToolKit.Core.Textual;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolKit.Inspector;
 using EasyToolKit.OdinSerializer;
 using EasyToolKit.TileWorldPro;
 using UnityEngine;
