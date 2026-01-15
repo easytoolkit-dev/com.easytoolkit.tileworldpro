@@ -1,6 +1,6 @@
 using EasyToolKit.Core;
 using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Attributes.Editor;
+using EasyToolKit.Inspector.Editor;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
