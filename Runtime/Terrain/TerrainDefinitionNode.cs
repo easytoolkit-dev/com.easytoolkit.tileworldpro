@@ -97,7 +97,7 @@ namespace EasyToolKit.TileWorldPro
                 if (s_iconGetter == null)
                 {
                     var iconsType = TwoWaySerializationBinder.Default.BindToType("EasyToolKit.TileWorldPro.Editor.TileWorldIcons");
-                    var iconsInstance = iconsType.GetProperty("Instance", BindingFlagsHelper.AllStatic).GetValue(null);
+                    var iconsInstance = iconsType.GetProperty("Instance", MemberAccessFlags.AllStatic).GetValue(null);
                     var getIconMethod = iconsType.GetMethod("GetTerrainDefinitionItemTypeIcon");
                     s_iconGetter = type => (Texture2D)getIconMethod.Invoke(iconsInstance, new object[] { type });
                 }

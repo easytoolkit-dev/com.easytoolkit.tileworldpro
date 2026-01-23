@@ -7,7 +7,8 @@
         "EasyToolKit.Inspector",
         "EasyToolKit.Inspector.Editor",
         "EasyToolKit.TileWorldPro",
-        "EasyToolKit.OdinSerializer"
+        "EasyToolKit.OdinSerializer",
+        "EasyToolKit.Serialization"
     ],
     "includePlatforms": [
         "Editor"

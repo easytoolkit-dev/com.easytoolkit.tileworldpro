@@ -6,8 +6,7 @@ using EasyToolKit.OdinSerializer;
 
 namespace EasyToolKit.TileWorldPro
 {
-    [ShowOdinSerializedPropertiesInInspector]
-    public class TerrainDefinitionSet : IEnumerable<TerrainDefinition>
+    public class TerrainDefinitionSet
     {
         [OdinSerialize]
         [LabelText("地形定义表")]
@@ -104,11 +103,6 @@ namespace EasyToolKit.TileWorldPro
             }
 
             currentPath.RemoveAt(currentPath.Count - 1); // 回溯
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
         }
 
 #if UNITY_EDITOR

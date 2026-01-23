@@ -14,7 +14,7 @@ namespace EasyToolKit.TileWorldPro
 
         static TileWorldDataStoreUtility()
         {
-            DataStoreTypesByName = AppDomain.CurrentDomain.GetAssemblies()
+            DataStoreTypesByName = AssemblyUtility.GetAssemblies(AssemblyCategory.Custom)
                 .SelectMany(assembly => assembly.GetCustomAttributes<RegisterTileWorldDataStoreAttribute>())
                 .ToDictionary(attribute => attribute.Name, attribute => attribute.DataStoreType);
         }
@@ -35,7 +35,7 @@ namespace EasyToolKit.TileWorldPro
 
         public static string GetDataStoreNameByType(Type dataStoreType)
         {
-            if (!dataStoreType.IsInheritsFrom<ITileWorldDataStore>())
+            if (!dataStoreType.IsDerivedFrom<ITileWorldDataStore>())
             {
                 throw new ArgumentException($"DataStoreType '{dataStoreType}' must implement '{typeof(ITileWorldDataStore)}'", nameof(dataStoreType));
             }

@@ -17,7 +17,7 @@ namespace EasyToolKit.TileWorldPro
 
         static TileBuildProcessorUtility()
         {
-            ProcessorTypesByName = AppDomain.CurrentDomain.GetAssemblies()
+            ProcessorTypesByName = AssemblyUtility.GetAssemblies(AssemblyCategory.Custom)
                 .SelectMany(assembly => assembly.GetCustomAttributes<RegisterTileBuildProcessorAttribute>())
                 .ToDictionary(attribute => attribute.Name, attribute => attribute.ProcessorType);
         }
@@ -50,7 +50,7 @@ namespace EasyToolKit.TileWorldPro
 
         public static string GetProcessorNameByType(Type processorType)
         {
-            if (!processorType.IsInheritsFrom<ITileBuildProcessor>())
+            if (!processorType.IsDerivedFrom<ITileBuildProcessor>())
             {
                 throw new ArgumentException($"Processor type '{processorType}' must implement '{typeof(ITileBuildProcessor)}'", nameof(processorType));
             }

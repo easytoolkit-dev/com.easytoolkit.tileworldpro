@@ -3,7 +3,8 @@
     "references": [
         "EasyToolKit.Core",
         "EasyToolKit.Inspector",
-        "EasyToolKit.OdinSerializer"
+        "EasyToolKit.OdinSerializer",
+        "EasyToolKit.Serialization"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
