@@ -1,8 +1,8 @@
-using EasyToolKit.OdinSerializer;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.OdinSerializer;
+using EasyToolkit.TileWorldPro;
 
 [assembly: RegisterFormatter(typeof(BakedChunkTerrainSectionTileFormatter))]
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class BakedChunkTerrainSectionTileFormatter : MinimalBaseFormatter<BakedChunk.TerrainSection.Tile>
     {

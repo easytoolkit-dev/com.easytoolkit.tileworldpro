@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public enum TerrainRuleGridType
     {
@@ -13,7 +13,7 @@ namespace EasyToolKit.TileWorldPro
         Union
     }
 
-    [CreateAssetMenu(fileName = "TerrainConfig", menuName = "EasyToolKit/TileWorldPro/TerrainConfig")]
+    [CreateAssetMenu(fileName = "TerrainConfig", menuName = "EasyToolkit/TileWorldPro/TerrainConfig")]
     public class TerrainConfigAsset : ScriptableObject
     {
         [Serializable]

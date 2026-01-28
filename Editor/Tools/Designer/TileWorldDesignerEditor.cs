@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Mathematics;
-using EasyToolKit.Inspector.Editor;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Mathematics;
+using EasyToolkit.Inspector.Editor;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     [CustomEditor(typeof(TileWorldDesigner))]
     public class TileWorldDesignerEditor : EasyEditor

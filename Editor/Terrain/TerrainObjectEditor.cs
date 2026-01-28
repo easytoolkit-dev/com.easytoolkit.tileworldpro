@@ -1,9 +1,9 @@
-using EasyToolKit.Inspector;
-using EasyToolKit.Inspector.Editor;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Inspector;
+using EasyToolkit.Inspector.Editor;
+using EasyToolkit.TileWorldPro;
 using UnityEditor;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     [CustomEditor(typeof(ChunkTerrainObject))]
     public class TerrainObjectEditor : EasyEditor

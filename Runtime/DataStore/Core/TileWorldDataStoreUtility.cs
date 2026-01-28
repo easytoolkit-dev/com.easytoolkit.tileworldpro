@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Reflection;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Reflection;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public static class TileWorldDataStoreUtility
     {

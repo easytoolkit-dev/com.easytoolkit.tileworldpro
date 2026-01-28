@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using EasyToolKit.Core.Reflection;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Core.Reflection;
+using EasyToolkit.Inspector.Attributes;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public static class TileBuildProcessorUtility
     {

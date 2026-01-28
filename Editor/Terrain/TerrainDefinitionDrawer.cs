@@ -1,14 +1,14 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Editor;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Inspector.Editor;
 using JetBrains.Annotations;
 using System;
-using EasyToolKit.Core.Mathematics;
-using EasyToolKit.TileWorldPro.Editor.Internal;
+using EasyToolkit.Core.Mathematics;
+using EasyToolkit.TileWorldPro.Editor.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public static class TerrainDefinitionDrawerContext
     {

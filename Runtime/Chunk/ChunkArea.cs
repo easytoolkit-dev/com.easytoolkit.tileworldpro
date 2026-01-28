@@ -1,9 +1,9 @@
 using System;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Diagnostics;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Diagnostics;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public struct ChunkArea
     {

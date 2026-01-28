@@ -1,9 +1,9 @@
-using EasyToolKit.Inspector.Editor;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Inspector.Editor;
+using EasyToolkit.TileWorldPro;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public class ChunkAreaDrawer : EasyValueDrawer<ChunkArea>
     {

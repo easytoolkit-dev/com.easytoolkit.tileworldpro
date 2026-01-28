@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.OdinSerializer;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.OdinSerializer;
+using EasyToolkit.TileWorldPro;
 
 [assembly: RegisterFormatter(typeof(ChunkFormatter))]
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class ChunkFormatter : MinimalBaseFormatter<Chunk>
     {

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Mathematics;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Mathematics;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public class RectangleBrushTool : BrushTool
     {

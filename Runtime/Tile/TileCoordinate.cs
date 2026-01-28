@@ -1,9 +1,9 @@
 using System;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Mathematics;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Mathematics;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [Serializable]
     public struct TileCoordinate : IEquatable<TileCoordinate>

@@ -1,10 +1,10 @@
 {
-    "name": "EasyToolKit.TileWorldPro",
+    "name": "EasyToolkit.TileWorldPro",
     "references": [
-        "EasyToolKit.Core",
-        "EasyToolKit.Inspector",
-        "EasyToolKit.OdinSerializer",
-        "EasyToolKit.Serialization"
+        "EasyToolkit.Core",
+        "EasyToolkit.Inspector",
+        "EasyToolkit.OdinSerializer",
+        "EasyToolkit.Serialization"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

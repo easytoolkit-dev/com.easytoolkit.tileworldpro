@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public abstract class CompositeDraggableDrawingTool : DraggableDrawingTool
     {

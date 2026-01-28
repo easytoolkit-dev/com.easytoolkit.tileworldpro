@@ -1,9 +1,9 @@
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 using JetBrains.Annotations;
 using System;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [Serializable]
     [HideLabel]

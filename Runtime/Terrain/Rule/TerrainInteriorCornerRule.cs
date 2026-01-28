@@ -1,10 +1,10 @@
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 using System;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
-    [MetroFoldoutGroup("内转角规则集", IconTextureGetter = "-t:EasyToolKit.TileWorldPro.Editor.TileWorldIcons -p:Instance.TerrainInteriorCornerTypeIcon")]
+    [MetroFoldoutGroup("内转角规则集", IconTextureGetter = "-t:EasyToolkit.TileWorldPro.Editor.TileWorldIcons -p:Instance.TerrainInteriorCornerTypeIcon")]
     [HideLabel]
     [Serializable]
     public class TerrainInteriorCornerRule : TerrainRuleBase

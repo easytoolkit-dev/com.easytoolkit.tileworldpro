@@ -1,13 +1,13 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor.Internal;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor.Internal;
 using System;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Core.Patterns;
-using EasyToolKit.Core.Unity;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Core.Patterns;
+using EasyToolkit.Core.Unity;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public class TileWorldIcons : Singleton<TileWorldIcons>
     {

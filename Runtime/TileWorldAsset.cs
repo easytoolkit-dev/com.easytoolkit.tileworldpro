@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.OdinSerializer;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
-    [ShowOdinSerializedPropertiesInInspector]
-    [CreateAssetMenu(menuName = "EasyToolKit/TileWorldPro/TileWorld", fileName = "TileWorld")]
+    [ShowEasySerializeFieldsInInspector]
+    [CreateAssetMenu(menuName = "EasyToolkit/TileWorldPro/TileWorld", fileName = "TileWorld")]
     public class TileWorldAsset : SerializedScriptableObject
     {
         [LabelText("地基范围")]

@@ -1,4 +1,4 @@
-﻿namespace EasyToolKit.TileWorldPro
+﻿namespace EasyToolkit.TileWorldPro
 {
     public enum TerrainDefinitionNodeType
     {

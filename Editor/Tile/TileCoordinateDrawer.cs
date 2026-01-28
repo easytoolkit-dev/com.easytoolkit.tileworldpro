@@ -1,9 +1,9 @@
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Editor;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Inspector.Editor;
+using EasyToolkit.TileWorldPro;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     [DrawerPriority(DrawerPriorityLevel.Value + 100)]
     public class TileCoordinateDrawer : EasyValueDrawer<TileCoordinate>

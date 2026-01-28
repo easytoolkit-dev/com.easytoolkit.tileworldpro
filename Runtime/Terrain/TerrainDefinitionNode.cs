@@ -1,14 +1,14 @@
 ﻿using System;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Mathematics;
-using EasyToolKit.Core.Reflection;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Mathematics;
+using EasyToolkit.Core.Reflection;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.OdinSerializer;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
-    [ShowOdinSerializedPropertiesInInspector]
+    [ShowEasySerializeFieldsInInspector]
 #if UNITY_EDITOR
     [MetroFoldoutGroup("@Name", "@Tooltip",
         SideLineColorGetter = nameof(SideLineColor),
@@ -96,7 +96,7 @@ namespace EasyToolKit.TileWorldPro
             {
                 if (s_iconGetter == null)
                 {
-                    var iconsType = TwoWaySerializationBinder.Default.BindToType("EasyToolKit.TileWorldPro.Editor.TileWorldIcons");
+                    var iconsType = TwoWaySerializationBinder.Default.BindToType("EasyToolkit.TileWorldPro.Editor.TileWorldIcons");
                     var iconsInstance = iconsType.GetProperty("Instance", MemberAccessFlags.AllStatic).GetValue(null);
                     var getIconMethod = iconsType.GetMethod("GetTerrainDefinitionItemTypeIcon");
                     s_iconGetter = type => (Texture2D)getIconMethod.Invoke(iconsInstance, new object[] { type });

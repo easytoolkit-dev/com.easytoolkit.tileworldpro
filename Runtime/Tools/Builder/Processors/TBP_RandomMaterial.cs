@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using EasyToolKit.Core.Mathematics;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Core.Mathematics;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.TileWorldPro;
 using UnityEngine;
 
 [assembly: RegisterTileBuildProcessor(typeof(TBP_RandomMaterial), "随机材质")]
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TBP_RandomMaterial : AbstractTileBuildProcessor
     {

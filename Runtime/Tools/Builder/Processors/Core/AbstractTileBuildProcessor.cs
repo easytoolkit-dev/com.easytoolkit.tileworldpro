@@ -1,9 +1,9 @@
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 using System;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.OdinSerializer;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [Serializable]
 #if UNITY_EDITOR

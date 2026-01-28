@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Core.Mathematics;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Core.Mathematics;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public abstract class DraggableDrawingTool : IDrawingTool
     {

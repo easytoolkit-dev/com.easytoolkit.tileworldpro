@@ -1,9 +1,9 @@
-using EasyToolKit.OdinSerializer;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.OdinSerializer;
+using EasyToolkit.TileWorldPro;
 using UnityEngine;
 
 [assembly: RegisterFormatter(typeof(ChunkAreaFormatter))]
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class ChunkAreaFormatter : MinimalBaseFormatter<ChunkArea>
     {

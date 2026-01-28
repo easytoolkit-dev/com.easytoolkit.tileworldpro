@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public struct ChunkCoordinate : IEquatable<ChunkCoordinate>
     {

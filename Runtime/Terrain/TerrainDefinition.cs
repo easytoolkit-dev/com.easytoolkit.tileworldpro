@@ -1,9 +1,9 @@
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.OdinSerializer;
 using System;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TerrainDefinition : TerrainDefinitionNode
     {

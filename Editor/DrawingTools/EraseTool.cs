@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Core.Events;
+using EasyToolkit.Core.Events;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public class EraseTool : DraggableDrawingTool
     {

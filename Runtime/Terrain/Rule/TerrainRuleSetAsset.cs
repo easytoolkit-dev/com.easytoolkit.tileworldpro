@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
-    [CreateAssetMenu(fileName = "TerrainRuleSet", menuName = "EasyToolKit/TileWorldPro/TerrainRuleSet")]
+    [CreateAssetMenu(fileName = "TerrainRuleSet", menuName = "EasyToolkit/TileWorldPro/TerrainRuleSet")]
     public class TerrainRuleSetAsset : ScriptableObject
     {
         [SerializeField] private TerrainFillRule _fillRule;

@@ -1,4 +1,4 @@
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public class LineBrushTool : BrushTool
     {

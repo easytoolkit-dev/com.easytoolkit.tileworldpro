@@ -1,9 +1,9 @@
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Editor;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Inspector.Editor;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     [CustomEditor(typeof(TerrainRuleSetAsset))]
     public class TerrainRuleSetAssetEditor : EasyEditor

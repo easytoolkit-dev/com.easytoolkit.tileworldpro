@@ -1,10 +1,10 @@
 using System;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
-    [MetroFoldoutGroup("边缘规则集", IconTextureGetter = "-t:EasyToolKit.TileWorldPro.Editor.TileWorldIcons -p:Instance.TerrainEdgeTypeIcon")]
+    [MetroFoldoutGroup("边缘规则集", IconTextureGetter = "-t:EasyToolkit.TileWorldPro.Editor.TileWorldIcons -p:Instance.TerrainEdgeTypeIcon")]
     [HideLabel]
     [Serializable]
     public class TerrainEdgeRule : TerrainRuleBase

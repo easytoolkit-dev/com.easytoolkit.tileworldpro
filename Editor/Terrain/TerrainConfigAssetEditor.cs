@@ -1,12 +1,12 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Core.Mathematics;
-using EasyToolKit.Inspector.Editor;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Core.Mathematics;
+using EasyToolkit.Inspector.Editor;
+using EasyToolkit.TileWorldPro;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     [CustomEditor(typeof(TerrainConfigAsset))]
     public class TerrainConfigAssetEditor : EasyEditor

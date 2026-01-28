@@ -1,8 +1,8 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Mathematics;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Mathematics;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TileWorldStartPoint : MonoBehaviour
     {

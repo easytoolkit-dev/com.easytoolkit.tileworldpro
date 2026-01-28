@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Core.Collections;
-using EasyToolKit.Core.Diagnostics;
-using EasyToolKit.Core.Events;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.Core.Collections;
+using EasyToolkit.Core.Diagnostics;
+using EasyToolkit.Core.Events;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.OdinSerializer;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [ExecuteAlways]
     public class TileWorldBuilder : SerializedMonoBehaviour, IEventHandler<SetTilesEvent>, IEventHandler<RemoveTilesEvent>

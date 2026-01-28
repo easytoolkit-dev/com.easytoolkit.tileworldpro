@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor.Internal
+namespace EasyToolkit.TileWorldPro.Editor.Internal
 {
     internal static class EditorHelper
     {

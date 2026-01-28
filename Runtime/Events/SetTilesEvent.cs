@@ -1,6 +1,6 @@
 using System;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class SetTilesEvent
     {

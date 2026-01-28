@@ -1,14 +1,14 @@
 {
-    "name": "EasyToolKit.TileWorldPro.Editor",
+    "name": "EasyToolkit.TileWorldPro.Editor",
     "rootNamespace": "",
     "references": [
-        "EasyToolKit.Core",
-        "EasyToolKit.Core.Editor",
-        "EasyToolKit.Inspector",
-        "EasyToolKit.Inspector.Editor",
-        "EasyToolKit.TileWorldPro",
-        "EasyToolKit.OdinSerializer",
-        "EasyToolKit.Serialization"
+        "EasyToolkit.Core",
+        "EasyToolkit.Core.Editor",
+        "EasyToolkit.Inspector",
+        "EasyToolkit.Inspector.Editor",
+        "EasyToolkit.TileWorldPro",
+        "EasyToolkit.OdinSerializer",
+        "EasyToolkit.Serialization"
     ],
     "includePlatforms": [
         "Editor"

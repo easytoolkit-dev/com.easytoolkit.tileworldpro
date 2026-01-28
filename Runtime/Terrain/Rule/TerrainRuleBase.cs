@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public abstract class TerrainRuleBase
     {

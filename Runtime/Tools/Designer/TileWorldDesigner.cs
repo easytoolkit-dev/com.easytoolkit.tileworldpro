@@ -1,9 +1,9 @@
 using System;
-using EasyToolKit.Core.Unity;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Core.Unity;
+using EasyToolkit.Inspector.Attributes;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TileWorldDesigner : MonoBehaviour
     {

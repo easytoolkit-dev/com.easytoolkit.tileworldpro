@@ -1,8 +1,8 @@
-using EasyToolKit.Core.Patterns;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Core.Patterns;
+using EasyToolkit.Inspector.Attributes;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [EasyInspector]
     [ScriptableObjectSingletonConfiguration(null, ScriptableObjectLoadMode.Asset)]

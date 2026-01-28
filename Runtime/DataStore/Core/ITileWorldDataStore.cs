@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [HideLabel]
     public interface ITileWorldDataStore : IDisposable

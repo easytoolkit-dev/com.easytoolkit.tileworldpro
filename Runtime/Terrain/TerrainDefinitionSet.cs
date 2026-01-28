@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.OdinSerializer;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TerrainDefinitionSet
     {

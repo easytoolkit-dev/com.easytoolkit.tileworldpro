@@ -1,12 +1,12 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Core.Mathematics;
-using EasyToolKit.Inspector.Editor;
-using EasyToolKit.TileWorldPro.Editor.Internal;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Core.Mathematics;
+using EasyToolkit.Inspector.Editor;
+using EasyToolkit.TileWorldPro.Editor.Internal;
 using UnityEditor;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public class TerrainTileDefinitionDrawer : EasyValueDrawer<TerrainTileDefinition>
     {

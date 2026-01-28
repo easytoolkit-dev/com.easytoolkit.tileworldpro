@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.TileWorldPro;
 
 [assembly: RegisterTileBuildProcessor(typeof(TBP_RotationAdjust), "旋转调整")]
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TBP_RotationAdjust : AbstractTileBuildProcessor
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     public class TerrainDefinitionPathInfo
     {

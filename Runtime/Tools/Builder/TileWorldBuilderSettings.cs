@@ -1,8 +1,8 @@
 using System;
-using EasyToolKit.Inspector.Attributes;
+using EasyToolkit.Inspector.Attributes;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [Serializable]
     public class TileWorldBuilderSettings

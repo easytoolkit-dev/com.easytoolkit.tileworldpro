@@ -1,6 +1,6 @@
 using System;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
     public class RegisterTileBuildProcessorAttribute : Attribute

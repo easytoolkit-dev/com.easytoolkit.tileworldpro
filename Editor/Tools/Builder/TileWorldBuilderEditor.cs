@@ -1,11 +1,11 @@
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Inspector.Editor;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Inspector.Editor;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     [CustomEditor(typeof(TileWorldBuilder))]
     public class TileWorldBuilderEditor : EasyEditor

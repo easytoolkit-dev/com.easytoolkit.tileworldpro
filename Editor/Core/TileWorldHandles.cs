@@ -1,13 +1,13 @@
 using System;
 using System.Linq;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Editor;
-using EasyToolKit.Core.Mathematics;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Editor;
+using EasyToolkit.Core.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace EasyToolKit.TileWorldPro.Editor
+namespace EasyToolkit.TileWorldPro.Editor
 {
     public static class TileWorldHandles
     {

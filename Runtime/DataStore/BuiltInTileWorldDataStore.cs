@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Core;
-using EasyToolKit.Core.Collections;
-using EasyToolKit.Core.Textual;
-using EasyToolKit.Inspector;
-using EasyToolKit.OdinSerializer;
-using EasyToolKit.TileWorldPro;
+using EasyToolkit.Core;
+using EasyToolkit.Core.Collections;
+using EasyToolkit.Core.Textual;
+using EasyToolkit.Inspector;
+using EasyToolkit.OdinSerializer;
+using EasyToolkit.TileWorldPro;
 using UnityEngine;
 
 [assembly: RegisterTileWorldDataStore(typeof(BuiltInTileWorldDataStore), "BuiltIn")]
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [Serializable]
     public class BuiltInTileWorldDataStore : ITileWorldDataStore, ISerializationCallbackReceiver

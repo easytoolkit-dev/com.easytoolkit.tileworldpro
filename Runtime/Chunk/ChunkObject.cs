@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using EasyToolKit.Inspector;
-using EasyToolKit.Inspector.Attributes;
-using EasyToolKit.OdinSerializer;
+using EasyToolkit.Inspector;
+using EasyToolkit.Inspector.Attributes;
+using EasyToolkit.OdinSerializer;
 using UnityEngine;
 
-namespace EasyToolKit.TileWorldPro
+namespace EasyToolkit.TileWorldPro
 {
     [EasyInspector]
     public class ChunkObject : SerializedMonoBehaviour
