@@ -16,14 +16,14 @@ namespace EasyToolkit.TileWorldPro.Editor
 
             if (!IsInlineEditor)
             {
-                MetroBoxGroupAttributeDrawer.BeginDraw(TempContent.SetText("地形规则集"), null);
+                MetroBoxGroupDrawer.BeginDraw(TempContent.SetText("地形规则集"), null);
             }
 
             Tree.DrawElements();
 
             if (!IsInlineEditor)
             {
-                MetroBoxGroupAttributeDrawer.EndDraw();
+                MetroBoxGroupDrawer.EndDraw();
             }
 
             Tree.EndDraw();

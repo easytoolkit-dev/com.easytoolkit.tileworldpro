@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using EasyToolkit.Core.Collections;
-using EasyToolkit.Core.Diagnostics;
 using EasyToolkit.Core.Events;
 using EasyToolkit.Inspector.Attributes;
 using EasyToolkit.OdinSerializer;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace EasyToolkit.TileWorldPro
 {
@@ -22,7 +22,7 @@ namespace EasyToolkit.TileWorldPro
         [SerializeField] private TileWorldBuilderSettings _settings;
 
         [Required]
-        [EndFoldoutBoxGroup]
+        [EndGroup]
         [LabelText("资产")]
         [InlineEditor(Style = InlineEditorStyle.FoldoutBox)]
         [SerializeField] private TileWorldAsset _tileWorldAsset;

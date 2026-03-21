@@ -24,7 +24,7 @@ namespace EasyToolkit.TileWorldPro
         [HideLabel]
         [SerializeField] private TileWorldDesignerSettings _settings;
 
-        [EndFoldoutBoxGroup]
+        [EndGroup]
         [Required]
         [LabelText("资产")]
         [SerializeField, InlineEditor] private TileWorldAsset _tileWorldAsset;

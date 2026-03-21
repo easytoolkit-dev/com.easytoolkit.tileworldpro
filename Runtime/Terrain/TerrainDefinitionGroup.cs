@@ -9,7 +9,7 @@ namespace EasyToolkit.TileWorldPro
 {
     public class TerrainDefinitionGroup : TerrainDefinitionNode, IEnumerable<TerrainDefinition>
     {
-        [EndFoldoutGroup]
+        [EndGroup]
         [LabelText("地形定义表")]
 #if UNITY_EDITOR
         [ValueDropdown(nameof(TerrainDefinitionNodeDropdownList))]
